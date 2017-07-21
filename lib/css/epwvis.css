@@ -68,3 +68,7 @@ aside {
 .legend-header text {
   font: 14px sans-serif;
 }
+
+.bar:hover{
+  fill: black;
+}
