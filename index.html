@@ -158,16 +158,24 @@
                     <h3 id="stationName"></h3>
                    
                     <div id="epwChartDiv">
+                        <div>
+                        <button id='savePNGbutton'>Download PNG File(s)</button>
+                        </div>
+                        <div>
+                        <button id="downloadPDFbutton">Download PDF Doc</button>
+                        </div>
                         <div id="TemperatureFloodplot">
                             <h3>Drybulb Temperature Floodplot</h3>
+                            <input type="checkbox" id="floodplotCheck"> Select Graph
                             <div id="epwTempFloodPlot"></div>
                         </div>
+                        
                         <div>
-                        <button id='saveButton'>Export Visualization to PNG</button>
+                          <h3>Drybulb Temperature Histogram</h3>
+                          <input type="checkbox" id="histoCheck"> Select Graph
+                          <div id="epwTempHistogram"></div>
                         </div>
-                        <div>
-                        <button id="download">Download PDF</button>
-                        </div>
+                       
                         <!-- <div id="epwTempFilter">
                             <h3>Drybulb Temperature Filter</h3>                        
                             <p id="tempFilterExamples"></p>
@@ -293,6 +301,9 @@
       this.className = 'upload-drop-zone';
       return false;
   }; 
+
+
+
 
 
   //google analytics
