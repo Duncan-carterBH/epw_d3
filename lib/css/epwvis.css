@@ -69,6 +69,6 @@ aside {
   font: 14px sans-serif;
 }
 
-.bar:hover{
-  fill: black;
+.bar{
+  text-align: center;
 }
